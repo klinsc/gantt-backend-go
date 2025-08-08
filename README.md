@@ -1,4 +1,4 @@
-Backend for SVAR Data Gantt
+Backend for SVAR Gantt Chart
 ===========================
 
 ### How to start
