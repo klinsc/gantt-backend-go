@@ -22,7 +22,7 @@ func numberParam(r *http.Request, key string) int {
 func parseForm(w http.ResponseWriter, r *http.Request, o interface{}) error {
 	body := http.MaxBytesReader(w, r.Body, 1048576)
 	dec := json.NewDecoder(body)
-	err := dec.Decode(&o)
+	err := dec.Decode(o)
 
 	return err
 }
