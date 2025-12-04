@@ -9,6 +9,11 @@ import (
 
 func initRoutes(r chi.Router, dao *data.DAO) {
 
+	// home page
+	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
+		w.Write([]byte("Gantt backend is running"))
+	})
+
 	r.Get("/tasks", func(w http.ResponseWriter, r *http.Request) {
 		// data, err := dao.Tasks.GetAll()
 		data, err := dao.Tasks.GetBranch(0)
