@@ -1,5 +1,4 @@
-Backend for SVAR Gantt Chart
-===========================
+# Backend for SVAR Gantt Chart
 
 ### How to start
 
@@ -10,8 +9,8 @@ db:
   path: db.sqlite
   resetonstart: true
 server:
-  url: "http://localhost:3000"
-  port: ":3000"
+  url: "http://localhost:8080"
+  port: ":8080"
   cors:
     - "*"
 ```
