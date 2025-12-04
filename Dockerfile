@@ -6,7 +6,7 @@ COPY go.mod go.sum ./
 RUN go mod download
 
 COPY . .
-RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -o /src/gantt-backend-go ./...
+RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go build -o /src/gantt-backend-go .
 
 FROM debian:12-slim
 
