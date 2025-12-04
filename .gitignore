@@ -1,6 +1,7 @@
 .idea
 .vscode
 scheduler-go
-db.sqlite
 __debug_bin
 gantt-backend-go
+
+db copy*
